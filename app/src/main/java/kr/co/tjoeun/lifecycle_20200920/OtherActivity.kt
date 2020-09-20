@@ -10,10 +10,15 @@ class OtherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_other)
 
-        Log.d("다른화면","onCreate 실행됨")
+        Log.d("다른화면", "onCreate 실행됨")
 
         goBackBtn.setOnClickListener {
             finish()
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("다른화면", "onDestory 실행")
     }
 }

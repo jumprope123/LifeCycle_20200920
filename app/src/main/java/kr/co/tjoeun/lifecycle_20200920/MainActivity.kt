@@ -29,4 +29,9 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         Log.d("메인화면","onPause 실행됨")
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("메인화면","onDestory 실행")
+    }
 }
