@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".OtherActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="메인 화면입니다"
+        android:text="다른화면입니다"
         android:textSize="20sp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="아무 문장이나 입력하세요"/>
+        android:hint="아무문장이나 입력하세요"/>
 
     <Button
-        android:id="@+id/moveToOtherBtn"
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른화면으로 이동"/>
+        android:text="메인으로 돌아가기"/>
 </LinearLayout>
